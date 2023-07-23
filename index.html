@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Tailwind CSS and Daisy CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope";
+      }
+      .bg-footer {
+        background: linear-gradient(
+          270deg,
+          rgba(255, 0, 0, 0.1) 0%,
+          rgba(255, 137, 56, 0.1) 100%
+        );
+      }
+
+      .btn-bg-primary {
+        background-image: linear-gradient(270deg, #f00 0%, #ff8938 100%);
+      }
+
+      .text-black-1 {
+        color: #1c1c1c;
+      }
+
+      .text-gray-1 {
+        color: #777;
+      }
+
+      .text-gradient {
+        background: linear-gradient(270deg, #f00 0%, #ff8938 100%);
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
+    <!-- Header Section -->
+    <header>
+      <!-- Hero Section -->
+      <section class="">
+        <div class="hero xl:w-10/12 m-auto">
+          <div class="hero-content gap-10 flex-col lg:flex-row-reverse">
+            <img src="./images/banner.png" class="xl:w-1/2" />
+            <div class="xl:w-1/2">
+              <h1 class="text-6xl text-[#1C1C1C] font-black">
+                It's good <br />
+                tea time at The <br />
+                Tea House
+              </h1>
+              <p class="py-6">
+                Tea and Botanical Solutions Supplier Give Optimum Satisfaction
+                To Your Taste Buds.
+              </p>
+              <button
+                class="btn btn-primary bg-gradient-to-l text-white border-0 from-[#f00] to-[#ff8938]"
+              >
+                Explore More
+                <img class="w-auto" src="./images/arrow.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+    </header>
+    <!-- End Header Section -->
+    <!-- Main Section -->
+    <main></main>
+    <!-- End Main Section -->
+
+    <!-- Footer Section -->
+    <footer></footer>
+    <!-- End Footer Section -->
+  </body>
+</html>
