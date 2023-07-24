@@ -1,92 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tea House</title>
-    <!-- Import Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Link Tailwind CSS and Daisy CSS-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tea House</title>
+  <!-- Import Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
-    <!-- Custom CSS -->
-    <style>
-      .font-manrope {
-        font-family: "Manrope";
-      }
-      .bg-footer {
-        background: linear-gradient(
-          270deg,
+  <!-- Link Tailwind CSS and Daisy CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <style>
+    .font-manrope {
+      font-family: "Manrope";
+    }
+
+    .bg-footer {
+      background: linear-gradient(270deg,
           rgba(255, 0, 0, 0.1) 0%,
-          rgba(255, 137, 56, 0.1) 100%
-        );
-      }
+          rgba(255, 137, 56, 0.1) 100%);
+    }
 
-      .btn-bg-primary {
-        background-image: linear-gradient(270deg, #f00 0%, #ff8938 100%);
-      }
+    .btn-bg-primary {
+      background-image: linear-gradient(270deg, #f00 0%, #ff8938 100%);
+    }
 
-      .text-black-1 {
-        color: #1c1c1c;
-      }
+    .text-black-1 {
+      color: #1c1c1c;
+    }
 
-      .text-gray-1 {
-        color: #777;
-      }
+    .text-gray-1 {
+      color: #777;
+    }
 
-      .text-gradient {
-        background: linear-gradient(270deg, #f00 0%, #ff8938 100%);
+    .text-gradient {
+      background: linear-gradient(270deg, #f00 0%, #ff8938 100%);
+    }
+
+    .bg-card {
+      background: rgba(87, 118, 57, 0.10);
+    }
+    .bg-card-2 {
+      background: rgba(230, 166, 35, 0.10);
+
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            "bg-gray-2": ""
+          },
+
+        }
       }
-    </style>
-  </head>
-  <body class="font-manrope">
-    <!-- Header Section -->
-    <header>
-      <!-- Hero Section -->
-      <section class="">
-        <div class="hero xl:w-10/12 m-auto">
-          <div class="hero-content gap-10 flex-col lg:flex-row-reverse">
-            <img src="./images/banner.png" class="xl:w-1/2" />
-            <div class="xl:w-1/2">
-              <h1 class="text-6xl text-[#1C1C1C] font-black">
-                It's good <br />
-                tea time at The <br />
-                Tea House
-              </h1>
-              <p class="py-7">
-                Tea and Botanical Solutions Supplier Give Optimum Satisfaction
-                To Your Taste Buds.
-              </p>
-              <button
-                class="btn btn-primary bg-gradient-to-l text-white border-0 from-[#f00] to-[#ff8938]"
-              >
-                Explore More
-                <img class="w-auto" src="./images/arrow.png" alt="" />
-              </button>
+    }
+  </script>
+
+
+
+
+</head>
+
+<body class="font-manrope">
+  <!-- Header Section -->
+  <header>
+    <!-- Hero Section -->
+    <section class="">
+      <div class="hero xl:w-10/12 m-auto">
+        <div class="hero-content gap-10 flex-col lg:flex-row-reverse">
+          <div class="w-1/2">
+            <img class="w-full" src="./images/banner.png" alt="" />
+            <div class="flex items-center gap-3 bg-white drop-shadow-2xl w-64 p-4 rounded-xl -mt-20 ml-4">
+
+              <img src="./images/star.png" alt="" />
+              <div>
+                <h4 class="text-2xl font-black">5.00</h4>
+                <p class="font-semibold text-base text-[#777]">Trust Pilot Ratings</p>
+              </div>
             </div>
           </div>
+          <div class="xl:w-1/2">
+            <h1 class="text-6xl text-[#1C1C1C] font-black">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-7">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction
+              To Your Taste Buds.
+            </p>
+            <button class="btn btn-primary bg-gradient-to-l text-white border-0 from-[#f00] to-[#ff8938]">
+              Explore More
+              <img class="w-auto" src="./images/arrow.png" alt="" />
+            </button>
+          </div>
         </div>
-      </section>
-      <!-- End Hero Section -->
-    </header>
-    <!-- End Header Section -->
-    <!-- Main Section -->
-    <main></main>
-    <!-- End Main Section -->
+      </div>
+    </section>
+    <!-- End Hero Section -->
+  </header>
+  <!-- End Header Section -->
+  <!-- Main Section -->
+  <main class="w-10/12 m-auto">
+    <!-- Feature Section -->
+    <section class="mt-24">
+      <!-- Feature Content Section -->
+      <div class="text-center space-y-4 ">
+        <h3 class="text-4xl font-extrabold text-center"> Our Featured Products</h3>
+        <p class="w-9/12 m-auto text-[#777]">There are many variations of passages of Lorem Ipsum available, but the
+          majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+          slightly believable. </p>
+      </div>
+      <!-- End Feature Content Section -->
+      <!-- Feature Card Section -->
+      <div class="grid grid-cols-4 gap-5 mt-12">
+        <!-- Card 1 -->
+        <div class="card w-full  flex-col-reverse p-7  bg-gray-100 items-center gap-6">
+          <div class="card-body p-0 text-center ">
+            <h2 class="card-title m-auto font-extrabold text-2xl">Milk Tea</h2>
+            <p class="text-base text-[#777]">Creamer could be replaced by fresh milk</p>
+          </div>
+          <figure><img class="center" src="/images/tea-1.png" alt="Shoes" /></figure>
+        </div>
+        <!-- End Card 1 -->
+        <!-- Card 2 -->
+        <div class="card w-full  flex-col-reverse p-7  bg-gray-100 items-center gap-6">
+          <div class="card-body p-0 text-center ">
+            <h2 class="card-title m-auto font-extrabold text-2xl">Black Tea</h2>
+            <p class="text-base text-[#777]">Creamer could be replaced by fresh milk</p>
+          </div>
+          <figure><img class="center" src="/images/tea-2.png" alt="Shoes" /></figure>
+        </div>
+        <!-- End Card 2 -->
+        <!-- Card 3 -->
+        <div class="card w-full  flex-col-reverse p-7  bg-gray-100 items-center gap-6">
+          <div class="card-body p-0 text-center ">
+            <h2 class="card-title m-auto font-extrabold text-2xl">Lemon Tea</h2>
+            <p class="text-base text-[#777]">Creamer could be replaced by fresh milk</p>
+          </div>
+          <figure><img class="center" src="/images/tea-3.png" alt="Shoes" /></figure>
+        </div>
+        <!-- End Card 3 -->
+        <!-- Card 4 -->
+        <div class="card w-full  flex-col-reverse p-7  bg-gray-100 items-center gap-6">
+          <div class="card-body p-0 text-center ">
+            <h2 class="card-title m-auto font-extrabold text-2xl">Green Tea</h2>
+            <p class="text-base text-[#777]">Creamer could be replaced by fresh milk</p>
+          </div>
+          <figure><img class="center" src="/images/tea-4.png" alt="Shoes" /></figure>
+        </div>
+        <!-- End Card 4 -->
+      </div>
+      <!-- End Feature Bottom Section -->
+    </section>
+    <!-- End Feature Section -->
+    <!-- Great Tea Section -->
+    <section class="mt-24 flex flex-row gap-5">
+      <!-- Geat Trea left Section -->
+      <!-- Tea Images -->
+      <div class="w-full flex flex-row gap-3">
+        <div class="w-full ">
+          <div class="w-full h-32 bg-gradient-to-r from-[#ff00004d] rounded-2xl  to-[#FF8938 ]">d</div>
+          <img class="w-full bg-card p-3" src="./images/fresh-1.png" alt="" />
+        </div>
+        <div class="w-full">
+          <img class="w-full  bg-card-2 p-3" src="./images/fresh-2.png" alt="" />
+        </div>
+      </div>
+      <!-- End Tea Images -->
+      <!-- End Geat Trea left Section -->
+      <!-- Geat Trea Right Section -->
+      <div class="w-full">
+        <h3>Great Tea, Freshly Presented</h1>
+          <p>The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It
+            represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply
+            appreciated by its custoers because of good words of mouth and unique customized service orginated from
+            Taiwan.</p>
+          <h4 class="">Unique Taste</h4>
+          <p class="">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+          <h4 class="">Premium Quality</h4>
+          <p class="">Premium Quality that makes tea more elegant and more durable when you use it.</p>
 
-    <!-- Footer Section -->
-    <footer></footer>
-    <!-- End Footer Section -->
-  </body>
+      </div>
+      <!-- End Geat Trea Right Section -->
+    </section>
+    <!-- End Great Tea Section -->
+
+  </main>
+  <!-- End Main Section -->
+
+  <!-- Footer Section -->
+  <footer></footer>
+  <!-- End Footer Section -->
+</body>
+
 </html>
